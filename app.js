@@ -102,14 +102,17 @@ while(number !== 100 || counter !== 4 ) {
   if (number < 100) {
     alert('you guessed too low');
     counter++;
-  } else if (number > 100) {
-    alert('you guessed too high!')
+  } 
+  else if (number > 100) {
+    alert('you guessed too high!');
     counter++;
-  }else if (number === NaN || number === null) {
+  }
+  else if (number === NaN || number === null) {
     alert('please enter a real number');
     counter++;
-  }else if (counter === 4) {
-    alert (username + ' the correct answer is the number 100!')
+  }
+  else if (counter === 4) {
+    alert (username + ' the correct answer is the number 100!');
   }
 }
 
