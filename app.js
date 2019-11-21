@@ -105,7 +105,7 @@ while(number !== 100 || counter !== 4 ) {
   } else if (number > 100) {
     alert('you guessed too high!')
     counter++;
-  }else if (number === NaN || number === null {
+  }else if (number === NaN || number === null) {
     alert('please enter a real number');
     counter++;
   }else if (counter === 4) {
