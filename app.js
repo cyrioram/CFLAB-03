@@ -1,6 +1,6 @@
 'use strict';
 
-//Obtain users name provide a personal greet
+//Obtain users name provide a personal greeting
 
 var userName = prompt('Salutations! What is your name?');
 console.log('The Users name is:', userName);
@@ -17,7 +17,6 @@ if (favFood === 'YES' || 'Y') {
 } else {
   //Provide negative feedback
   alert('You are not correct. Spaghetti is Dave\'s favorite food.');
-
 }
 
 //2nd question about fav color + set response UPPERCASE
@@ -31,7 +30,6 @@ if (favColor === 'NO' || 'N') {
 } else {
   //Provide negative feedback
   alert('That\'s not correct. That is not Dave\'s favorite color.');
-
 }
 
 //3rd question about fav sport + set response UPPERCASE
@@ -45,7 +43,6 @@ if (favSport === 'YES' || 'Y') {
 } else {
   //Provide negative feedback
   alert('That\'s not correct. Vollyball is in fact Dave\'s favorite sport next to Olympic tennis.');
-
 }
 
 //4th question about fav football team + set response UPPERCASE
@@ -59,7 +56,6 @@ if (favTeam === 'YES' || 'Y') {
 } else {
   //Provide positive feedback
   alert('That\'s correct. The Cowboys are not David\'s Team.');
-
 }
 
 
@@ -74,7 +70,6 @@ if (favGenre === 'YES' || 'Y') {
 } else {
   //Provide positive feedback
   alert('That\'s correct. David absolutely can\'t stand country.');
-
 }
 
 //5th question about fav music genre + set response UPPERCASE
@@ -88,7 +83,6 @@ if (favGenre === 'YES' || 'Y') {
 } else {
   //Provide positive feedback
   alert('That\'s correct. David absolutely can\'t stand country.');
-
 }
 
 //6th Ask User to guess a number 4 times and provide hints
@@ -102,19 +96,19 @@ while(number !== 100 || counter !== 4 ) {
   if (number < 100) {
     alert('you guessed too low');
     counter++;
-  } 
-  else if (number > 100) {
+
+  } else if (number > 100) {
     alert('you guessed too high!');
     counter++;
-  }
-  else if (number === NaN || number === null) {
+
+  }else if (number === NaN || number === null) {
     alert('please enter a real number');
     counter++;
-  }
-  else if (counter === 4) {
+
+  }else (counter === 4) ;
     alert (username + ' the correct answer is the number 100!');
   }
-}
+
 
 
 alert(userName + ' , thanks for visiting the site and playing along!');
