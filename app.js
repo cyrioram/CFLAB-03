@@ -76,7 +76,7 @@ if (favGenre === 'YES' || favGenre === 'Y') {
 
 var number;
 var counter = 1;
-var username = 'Dart';
+
 
 while(number !== 100) {
   number = parseInt(prompt('what is David\'s favorite number?'));
