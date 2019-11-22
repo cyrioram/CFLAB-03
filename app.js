@@ -93,7 +93,9 @@ while(number !== 100) {
   } else if (number === 100) {
     alert('You guessed right!');
     counter++;
-  }else if (number === NaN || number === null) {
+  //}else if (number === NaN || number === null) {
+  } else if (isNaN(number)){
+
     alert('Please enter a real number');
     counter++;
   }
