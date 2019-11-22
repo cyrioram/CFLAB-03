@@ -69,33 +69,32 @@ if (favGenre === 'YES' || favGenre === 'Y') {
   alert('You are absolutely incorrect. David enjoys the Hip Hop the most!');
 } else {
   //Provide positive feedback
-  alert('That\'s correct. David absolutely can\'t stand country.');
+  alert('That\'s correct. David absolutely can\'t stand country music.');
 }
 
 //6th Ask User to guess a number 4 times and provide hints
 
-var number =0;
+var number;
 var counter =1;
 
-while(number !== 100 || counter !== 4 ) {
+
+while(number !== 100) {
   number = parseInt(prompt('what is David\'s favorite number?'));
 
   if (number < 100) {
     alert('You guessed too low!');
     counter++;
-
   } else if (number > 100) {
     alert('You guessed too high!');
     counter++;
-
+  } else if (number === 100) {
+    alert('You guessed right!');
+    counter++;
   }else if (number === NaN || number === null) {
     alert('Please enter a real number');
     counter++;
-
-  }else (counter === 4) ;
-    alert (username + ' the correct answer is the number 100!');
   }
-
+}
 
 
 alert(userName + ' , thanks for visiting the site and playing along!');
