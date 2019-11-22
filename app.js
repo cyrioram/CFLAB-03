@@ -75,13 +75,16 @@ if (favGenre === 'YES' || favGenre === 'Y') {
 //6th Ask User to guess a number 4 times and provide hints
 
 var number;
-var counter =1;
-
+var counter = 1;
+var username = 'Dart';
 
 while(number !== 100) {
   number = parseInt(prompt('what is David\'s favorite number?'));
 
-  if (number < 100) {
+  if (counter >= 4) {
+    alert('The correct answer was 100!');
+    number = 100;
+  } else if (number < 100) {
     alert('You guessed too low!');
     counter++;
   } else if (number > 100) {
